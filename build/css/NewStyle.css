@@ -5,8 +5,8 @@ body {
 }
 
 .container-1 {
-  background-image: url(/img/01.jpg);
-  width: 100vh;
+  background-image: url(../img/01.jpg);
+  width: 100vw;
   height: 100vh;
   padding: 8em;
 }
@@ -18,37 +18,37 @@ body {
 }
 
 .container-2 {
-  background-image: url(/img/03.jpg);
+  background-image: url(../img/03.jpg);
   height: 100vh;
-  width: 100vh;
+  width: 100vw;
 }
 
 .container-3 {
-  background-image: url(/img/02.gif);
+  background-image: url(../img/02.gif);
   height: 100vh;
-  width: 100vh;
+  width: 100vw;
   background-repeat: no-repeat;
   background-size: cover;
   padding: 7em;
 }
 .container-3 img {
-  height: 400px;
   width: 100%;
+  height: auto;
 }
 
 .container-4 {
-  background-image: url(/img/04.jpg);
+  background-image: url(../img/04.jpg);
   height: 100vh;
-  width: 100vh;
+  width: 100vw;
 }
 
 .container-5 {
   text-align: center;
-  height: 20vh;
-  width: 100px;
-  margin-top: 27em;
+  padding: 1em; /*? Add internal padding to fix border*/
   background: black;
+  color: white; /*? Add text, because this was not appearing lol */
 }
+
 .container-5 .spacex {
   color: #555252;
   text-decoration: none;
@@ -72,4 +72,17 @@ body {
   margin-top: 3em;
 }
 
-/*# sourceMappingURL=style.css.map */
+footer {
+  text-align: center;
+  background-color: black;
+  color: white;
+  padding: 1em;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+/*? fix animations */
+[data-aos] {
+  display: block;
+}
